@@ -77,31 +77,38 @@ class Strawberry extends Fruit{
 
 class Main {
 	public static void main(String[] args) {		
-		Apple a = new Apple("Red Apple", "Red");
+		Apple a = new Apple("Apple", "Red");
 		System.out.println("Name: " + a.name);
 		System.out.println("Colour: " + a.colour);
+		System.out.println("-----------------------------------------");
 		
-		redApple c = new redApple("Honeycrisp", "Red", 0.02, 5.30);
+		redApple c = new redApple("Red Apple", "Red", 10, 5.30);
 		System.out.println("Name: " + c.name);
 		System.out.println("Colour: " + c.colour);
-		System.out.println("Weight: " + c.weight + " each");
+		System.out.println("Weight: " + c.weight + "kg");
 		System.out.println("Price: RM" + c.price + "/kg");
 		System.out.println("The total price is RM" + c.totalPrice());
+		System.out.println("-----------------------------------------");
 		
-		greenApple d = new greenApple("Crispin", "Green", 10, 0.85);
+		greenApple d = new greenApple("Green Apple", "Green", 10, 0.85);
 		System.out.println("Name: " + d.name);
 		System.out.println("Colour: " + d.colour);
-		System.out.println("the price is RM" + d.quantity + " each");
+		System.out.println("Quantity: " + d.quantity);
 		System.out.println("Price: RM" + d.price +" each");
+		System.out.println("The total price is RM" + d.totalPrice());
+		System.out.println("-----------------------------------------");
 		
 		Orange e = new Orange("Orange", 0.03, 6.50);
 		System.out.println("Name: " + e.name);
 		System.out.println("Weight: " + e.weight + "kg");
-		System.out.println("Price: RM" +e.price +"per kg");
+		System.out.println("Price: RM" +e.price +" per kg");
+		System.out.println("Types of orange: ");
+		System.out.println("-----------------------------------------");
 		
 		Strawberry f = new Strawberry("Strawberry", 20, 10.50);
 		System.out.println("Name: " + f.name);
-		System.out.println("Quantity: " + f.quantity + "kg");
+		System.out.println("Quantity: " + f.quantity);
 		System.out.println("Price : RM" +f.price + " each");
+		System.out.println("-----------------------------------------");
 	}
 }
